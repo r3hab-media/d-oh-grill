@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D'oh! Grill | JS</title>
+  <script type="module" src="js/includes.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <my-nav></my-nav>
+  <main>
+    <h2 class="page-title">How I used JS on this site</h2>
+    <ul class="js-list">
+      <li><span>1</span> Throughout the entire site, I'm using custom HTML elements to display the header and the footer. Custom HTML elements allow me to manage each of these components from a single file and call them from anywhere on the site. Please navigate to any page to see this in action. To see the code, please click <a href="/js/main.js" target="_blank">here</a>.</li>
+
+      <li><span>2</span> On the homepage, I created an event listener attached to a button. The button is over Homer's picture. When the button is played (and your speakers are on), you can hear Homer yell his infamous "D'oh!" phrase. You can see that <a href="index.html">here</a>.</li>
+
+      <li><span>3</span> On the order page, I am using a function that will calculate the total of the order on click. Once the calculate button is clicked, another function is triggered which unhides the "Pay Now" button. Once the "Pay Now" button is clicked, an area with payment options slides down, giving the user a method of payment. You can see all of this <a href="order.html">here</a>.</li>
+
+      <li><span>4</span> On the 'We Cater' page, I passed each of the menu options through a tagged template literal. This allows me to create all the menu options using JSON and pass them through a single template. It also prevents me from having to create a lot of additional HTML. You can view this <a href="catering.html">here</a>.</li>
+
+      <li><span>5</span> On the 'Comments' page, I've created a form for comment submission. If the user wants to submit a comment with their name/email address, they can. If the user wants to submit the comment form anonymously, they can simply click on the "Submit Anonymously?" button and the name/email fields will go away and allow an anonymous submission to be made. You can vieww this <a href="comments.html">here</a>.</li>
+    </ul>
+  </main>
+  <my-footer></my-footer>
+</body>
+</html>

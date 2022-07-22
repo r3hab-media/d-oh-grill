@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D'oh! Grill | Order</title>
+  <script type="module" src="js/includes.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <my-nav></my-nav>
+  <h2 class="page-title">Ready to Order?</h2>
+  <main>
+    <form>
+      <label for="item1" class="container">Hamburger ($5.00)
+        <input type="checkbox" id="item1" value="5">
+        <span class="checkmark"></span>
+      </label>
+
+      <label for="item2" class="container">Hotdog ($5.00)
+        <input type="checkbox" id="item2" value="5">
+        <span class="checkmark"></span>
+      </label>
+
+      <label for="item3" class="container">Jumbo Hotdog ($7.00)
+        <input type="checkbox" id="item3" value="7">
+        <span class="checkmark"></span>
+      </label>
+
+      <label for="item4" class="container">Corndog ($4.00)
+        <input type="checkbox" id="item4" value="4">
+        <span class="checkmark"></span>
+      </label>
+
+      <label for="item5" class="container">Chicken Fingers ($6.00)
+        <input type="checkbox" id="item5" value="5">
+        <span class="checkmark"></span>
+      </label>
+
+      <label for="item6" class="container">Nachos ($4.00)
+        <input type="checkbox" id="item6" value="4">
+        <span class="checkmark"></span>
+      </label>
+
+      <label for="item7" class="container">French Fries ($3.00)
+        <input type="checkbox" id="item7" value="3">
+        <span class="checkmark"></span>
+      </label>
+
+      <label for="item8" class="container">Soft Pretzel ($3.00)
+        <input type="checkbox" id="item8" value="3">
+        <span class="checkmark"></span>
+      </label>
+
+      <label for="item9" class="container">Small Drink ($2.00)
+        <input type="checkbox" id="item9" value="2">
+        <span class="checkmark"></span>
+      </label>
+
+      <label for="item10" class="container">Large Drink ($4.00)
+        <input type="checkbox" id="item10" value="4">
+        <span class="checkmark"></span>
+      </label>
+
+      <label for="item11" class="container">Bottled Water ($3.00)
+        <input type="checkbox" id="item11" value="3">
+        <span class="checkmark"></span>
+      </label>
+
+      <p id="total" class="priceInfo"></p>
+      <div class="btn-container">
+        <button type="button" id="realCalcButton">Calculate</button>
+        <button type="button" id="calcButton" style="display: none;">Pay Now!</button>
+      </div>
+
+      <div class="pay-options" id="payOpts" style="display: none;">
+        <a href="#">
+          <i class="fa-brands fa-google-pay fa-3x"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-cc-mastercard fa-3x"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-cc-visa fa-3x"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-cc-paypal fa-3x"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-apple-pay fa-3x"></i>
+        </a>
+      </div>
+    </form>
+  </main>
+  <my-footer></my-footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

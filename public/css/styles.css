@@ -1,0 +1,507 @@
+/* Roboto Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap');
+
+/* Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+
+  /* firefox fix for scrollbar removal */
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+body {
+  background-color: lightblue;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  position: relative;
+  padding-bottom: 50px;
+  min-height: 100vh;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+.comments-form input[type="submit"] {
+  background: #ffd91f;
+  border: 0;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all .3s ease;
+  width: fit-content;
+}
+
+button:hover {
+  background-color: #cfac01;
+  cursor: pointer;
+}
+
+/* nav */
+nav {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+
+@media screen and (min-width: 600px) {
+  nav {
+    flex-direction: row;
+  }
+}
+
+nav .nav-title {
+  padding: 10px;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: lightgray;
+}
+
+@media screen and (min-width: 600px) {
+  nav .nav-title {
+    font-size: 28px;
+  }
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #D4B27F;
+  padding: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  nav ul {
+    flex: 1;
+  }
+
+  nav ul li {
+    font-size: 18px;
+  }
+}
+
+nav ul li a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+nav ul li a:hover {
+  color: lightblue;
+}
+
+/* main */
+main {
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2.page-title {
+  margin: 16px 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+section {
+  margin: 24px 0;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    width: 50%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+article p {
+  margin: 16px 0;
+  line-height: 1.5;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd91f;
+  padding: 20px;
+  font-weight: 900;
+  height: 50px;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* menu */
+/* The container */
+.container {
+
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a red background */
+.container input:checked~.checkmark {
+  background-color: red;
+
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark:after {
+  display: block;
+
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+form {
+  border: 5px solid #148BA6;
+  border-radius: 4px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  form {
+    width: 75%;
+  }
+}
+
+label {
+  margin-left: 5px;
+  font-family: arial;
+  font-size: 14px;
+
+}
+
+h1 {
+  text-align: center;
+  font-family: arial;
+}
+
+body {
+  background-color: #BDE3F2;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-container button {
+  margin-top: 16px;
+  font-size: 22px;
+}
+
+.btn-container button + button {
+  margin-left: 5px;
+}
+
+.pay-options {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  padding: 10px 5px;
+  margin-top: 24px;
+}
+
+.pay-options a .fa-brands {
+  color: gray;
+  transition: all .6s ease;
+}
+
+.pay-options a .fa-brands:hover {
+  color: darkorange;
+}
+
+.buttonDiv,
+.priceInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.priceInfo {
+  text-align: center;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.homer {
+  position: relative;
+}
+
+button.play-doh {
+  font-size: 22px;
+  font-weight: 900;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
+button.play-doh .fas {
+  margin-right: 5px;
+}
+
+ul.js-list li {
+  background-color: #666;
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+ul.js-list li span {
+  border: 2px solid greenyellow;
+  padding: 1px 5px;
+  color: white;
+}
+
+ul.js-list li a {
+  color: white;
+  font-weight: 900;
+}
+
+ul.catering {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 992px) {
+  ul.catering {
+    flex-basis: 100%;
+    flex-direction: row;
+  }
+}
+
+ul.catering li {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  ul.catering li {
+    flex-basis: 50%;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  ul.catering li {
+    flex-basis: 33%;
+    justify-content: space-between;
+  }
+}
+
+ul.catering li:not(ul li ul li) {
+  border: 3px dashed black;
+  border-radius: 10px;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+ul.catering li+li {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  ul.catering li+li {
+    margin-top: unset;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  ul.catering li+li:not(ul li ul li) {
+    /* margin-top: unset;
+    margin-left: 10px; */
+    /* margin: 10px; */
+
+    /* margin-left: 10px; */
+    /* margin-top: 10px; */
+  }
+
+  ul.catering li+li {
+    margin-top: unset;
+  }  
+}
+
+ul.catering ul {
+  margin-left: 40px;
+}
+
+ul.catering li h4.price {
+  margin-bottom: 10px;
+}
+
+ul.catering ul li {
+  list-style-type: square;
+}
+
+ul.catering li h2,
+ul.catering li h3,
+ul.catering li h4 {
+  text-align: center;
+}
+
+@media screen and (min-width: 575px) {
+  ul.catering li h3 {
+    text-align: left;
+    margin-left: 20px;
+  }
+}
+
+/* comment form */
+section.comments {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+section.comments button {
+  width: fit-content;
+  margin: 10px 0;
+}
+
+.comments-form input {
+  padding: 5px;
+  border: 0;
+  border-bottom: 2px solid black;
+  margin: 10px 0;
+  background-color: transparent;
+}
+
+.comments-form select {
+  padding: 5px;
+  background-color: transparent;
+  margin: 10px 0;
+}
+
+.comments-form select option {
+  background-color: #BDE3F2;
+  border: 0;
+}
+
+.comments-form textarea {
+  background-color: transparent;
+  padding: 10px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  display: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.visit-date {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-evenly;
+}
+
+.error {
+  color: red;
+  font-weight: 700;
+}
+
+.success {
+  color: green;
+  font-weight: 700;
+}
+

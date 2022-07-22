@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D'oh! Grill | Contact</title>
+  <script type="module" src="js/includes.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <my-nav></my-nav>  
+  <main>
+    <section class="comments">
+      <h2 class="page-title">Comment Form</h2>
+      <button id="submitAnon">Submit Anonymously?</button>
+
+      <form class="comments-form" name="commentsForm" id="commentsForm">
+        <input type="text" id="fullname" class="pii" placeholder="Your name?">
+        <input type="email" class="pii" placeholder="Your email?">
+
+        <div class="visit-date">
+          <label for="visitDate">Date you visited?</label>
+          <input type="date" id="visitDate">
+          <small class="error" id="visitDateError"></small>
+        </div>
+
+        <input type="number" id="partyCount" placeholder="How many were in your party?">
+        <small class="error" id="partyCountError"></small>
+
+        <input type="text" placeholder="Name of your wait staff?">
+        <label for="overallRaiting">Overall Rating:</label>
+        <select name="overallRaiting" id="overallRaiting">
+          <option value="">Please select</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <small class="error" id="overallRatingError"></small>
+
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Your comments"></textarea>
+        <small class="error" id="commentsFieldError"></small>
+
+        <input type="submit" id="submitForm" value="Submit Comments">
+      </form>      
+    </section>
+    <p id="confMsg"></p>
+    <p id="redirectMsg"></p>
+  </main>
+  <my-footer></my-footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
